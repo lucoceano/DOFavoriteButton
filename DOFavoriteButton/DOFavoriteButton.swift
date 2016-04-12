@@ -371,19 +371,21 @@ public class DOFavoriteButton: UIButton {
         selected = true
         imageShape.fillColor = imageColorOn.CGColor
 		
-		CATransaction.begin()
+		if animated {
+			CATransaction.begin()
 
-		circleShape.addAnimation(circleTransform, forKey: "transform")
-		circleMask.addAnimation(circleMaskTransform, forKey: "transform")
-		imageShape.addAnimation(imageTransform, forKey: "transform")
+			circleShape.addAnimation(circleTransform, forKey: "transform")
+			circleMask.addAnimation(circleMaskTransform, forKey: "transform")
+			imageShape.addAnimation(imageTransform, forKey: "transform")
 
-		for i in 0 ..< 5 {
-			lines[i].addAnimation(lineStrokeStart, forKey: "strokeStart")
-			lines[i].addAnimation(lineStrokeEnd, forKey: "strokeEnd")
-			lines[i].addAnimation(lineOpacity, forKey: "opacity")
+			for i in 0 ..< 5 {
+				lines[i].addAnimation(lineStrokeStart, forKey: "strokeStart")
+				lines[i].addAnimation(lineStrokeEnd, forKey: "strokeEnd")
+				lines[i].addAnimation(lineOpacity, forKey: "opacity")
+			}
+
+			CATransaction.commit()
 		}
-
-		CATransaction.commit()
     }
 
     public func deselect() {
