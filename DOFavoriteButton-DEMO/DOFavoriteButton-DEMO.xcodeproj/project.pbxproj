@@ -14,6 +14,7 @@
 		4FBAA7081B4D807F00C8657F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7061B4D807F00C8657F /* Main.storyboard */; };
 		4FBAA70A1B4D807F00C8657F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA7091B4D807F00C8657F /* Images.xcassets */; };
 		4FBAA70D1B4D807F00C8657F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FBAA70B1B4D807F00C8657F /* LaunchScreen.xib */; };
+		C851CA7B1CBD397200B073FB /* DOFavoriteButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F60711B1B6366ED0058F570 /* DOFavoriteButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C851CA7B1CBD397200B073FB /* DOFavoriteButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
