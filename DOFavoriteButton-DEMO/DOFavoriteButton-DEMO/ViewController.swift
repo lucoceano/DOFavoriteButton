@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         if sender.selected {
             sender.deselect()
         } else {
-            sender.select()
+            sender.selectAnimated()
         }
     }
 }

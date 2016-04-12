@@ -362,8 +362,12 @@ public class DOFavoriteButton: UIButton {
     func touchCancel(sender: DOFavoriteButton) {
         self.layer.opacity = 1.0
     }
+	
+	public func selectAnimated(){
+		self.select(animated: true)
+	}
 
-    public func select() {
+	public func select(animated animated: Bool) {
         selected = true
         imageShape.fillColor = imageColorOn.CGColor
 		
